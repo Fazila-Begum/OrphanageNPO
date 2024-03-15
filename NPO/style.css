@@ -1,0 +1,85 @@
+
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    flex-grow: 1;
+    padding: 0 40px;
+}
+.text{
+    color: #00abf0;
+    font-family: 'knewave',cursive;
+    font-size: 60px;
+    /*text-shadow:
+    #9ca3af 0 0 12PX,
+     #9ca3af 0 0 25PX,
+     #9ca3af 0 0 35PX,
+     #9ca3af 0 0 45PX;*/
+}
+
+.content, .programs, .events{
+    width: 21em;
+    height: 25em;
+    background-color: #fff;
+    box-shadow: 5px 5px 25px #0000005f;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.content{
+    color: #fff;
+}
+.content h1{
+    font-size: 40px;
+    color: #00abf0;
+    font-weight: 600;
+}
+.content p{
+    font-size: 20px;
+    color: black;
+}
+
+.programs{
+    color: #fff;  
+}
+.programs h1{
+   font-size: 40px;
+   color: #00abf0;
+   font-weight: 600;
+   font-family: 'Josefin Sans',sans-serif;
+}
+.programs li{
+    font-size: 20px;
+    color: black;
+}
+
+.events{
+    color: #fff;  
+}
+.events h1{
+   font-size: 40px;
+   color: #00abf0;
+   font-weight: 600;
+}
+.events li{
+    font-size: 20px;
+    color: black;
+}
+
+@media(max-width:1220px){
+    .container{
+        height: 100%;
+        flex-direction: column;
+    }
+    .content, .programs, .events{
+        max-width: 80%;
+        padding:50px  30px;
+
+    }
+    h1{
+        font-size: 3em;
+        margin: 1.5em;
+    }
+}
